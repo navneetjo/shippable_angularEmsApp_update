@@ -36,6 +36,7 @@
     "supertest": "^1.0.1"
   },
   "dependencies": {
-    "jshint-html-reporter": "^0.2.4"
+    "jshint-html-reporter": "^0.2.4",
+    "phantom": "^0.8.0"
   }
 }
