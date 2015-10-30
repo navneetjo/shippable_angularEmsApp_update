@@ -17,4 +17,4 @@ install:
   
   # Running npm test to run your test cases
 script:
-  - grunt
+  - grunt --force
