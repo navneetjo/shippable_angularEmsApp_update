@@ -17,10 +17,10 @@ install:
   
   # Create directories for test and coverage reports
 before_script:
-      - mkdir -p shippable/testresults
-      - mkdir -p shippable/codecoverage
+  - mkdir -p shippable/testresult
+  - mkdir -p shippable/codecoverage
   
   # Running npm test to run your test cases
 script:
-- grunt mocha_istanbul
+  - grunt mocha_istanbul
   - grunt --force
