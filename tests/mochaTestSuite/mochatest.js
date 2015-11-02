@@ -34,7 +34,7 @@ describe("SAMPLE unit test",function(){
     server
     .get("/getData")
     .expect("Content-type",/json/)
-    .expect(404) // THis is HTTP response
+    .expect(200)// This is HTTP response
     .end(function(err,res){
       // HTTP status should be 200
       res.status.should.equal(200);
