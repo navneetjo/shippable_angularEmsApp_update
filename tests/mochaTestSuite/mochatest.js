@@ -3,7 +3,7 @@ var should = require("should");
 
 // This agent refers to PORT where program is runninng.
 
-var server = supertest.agent("http://172.27.59.61:3000");
+var server = supertest.agent("http://localhost:3000");
 
 // UNIT test begin
 
@@ -34,7 +34,7 @@ describe("SAMPLE unit test",function(){
     server
     .get("/getData")
     .expect("Content-type",/json/)
-    .expect(200) // THis is HTTP response
+    .expect(404) // THis is HTTP response
     .end(function(err,res){
       // HTTP status should be 200
       res.status.should.equal(200);
